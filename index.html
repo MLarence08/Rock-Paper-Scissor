@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper & Scissor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="page-1">
+        <div class="mainPage">
+            <label for="userName" class="text-style-enter"><b>Please Enter Your Name:</b></label>
+            <br>
+            <input type="text" id="userName" class="text-style">
+            <br>
+            <button class="play-btn" id="playBtn"><b>Play The Game!</b></button>
+        </div>
+    </div>
+    <div class="none" id="page-2">
+        <div class="div-score">
+            <div class="user-score">
+                <span class="text-style-enter">Your Score:</span>
+                <p class="text-style-enter" id="userScore">0</p>
+            </div>
+            <div class="Match-History">
+                <div>
+                    <span class="text-style">Match History</span>
+                </div>
+                <div class="history" id="history">
+
+                </div>
+            </div>
+            <div class="ai-score">
+                <span class="text-style-enter">AI Score:</span>
+                <p class="text-style-enter" id="aiScore">0</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="div-btn">
+                <div>
+                    <button class="btn" id="paperBtn" value="Paper"><img src="css/images/Paper.png"></button>
+                </div>
+                <div>
+                    <button class="btn" id="rockBtn" value="Rock"><img src="css/images/Rock.png"></button>
+                </div>
+                <div>
+                    <button class="btn" id="scissorBtn" value="Scissor"><img src="css/images/Scissor.png"></button>
+                </div>
+            </div>
+            <div class="div-select">
+                <div>
+                    <p class="text-style" id="userName-input"></p>
+                </div>
+                <div>
+                    <p class="text-style" id="userSelect"><img src="css/images/RockPaperScissor.gif"></p>
+                </div>
+            </div>
+            <div class="div-vs-style">
+                <p class="text-style-vs"><img src="css/images/vs.png"></p>
+            </div>
+            <div class="div-select">
+                <div>
+                    <p class="text-style">Ai</p>
+                </div>
+                <div>
+                    <p class="text-style" id="aiSelect"><img src="css/images/RockPaperScissor.gif"></p>
+                </div>    
+            </div>
+            <div class="div-btn">
+                <div>
+                    <img src="css/images/Paper.png" class="ai-selector">
+                </div>
+                <div>
+                    <img src="css/images/Rock.png" class="ai-selector">
+                </div>
+                <div>
+                    <img src="css/images/Scissor.png" class="ai-selector">
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="text-style-result" id="result"></p>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
